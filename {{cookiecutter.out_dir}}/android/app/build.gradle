@@ -76,7 +76,11 @@ android {
 // flet: end of android_signing {% endif %}
 
     buildTypes {
+        debug {
+            isMinifyEnabled = true
+        }
         release {
+            isMinifyEnabled = true
 // flet: android_signing {% if cookiecutter.options.android_signing %}
             signingConfig signingConfigs.release
 // {% else %}

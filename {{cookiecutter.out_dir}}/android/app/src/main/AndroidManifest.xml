@@ -8,6 +8,7 @@
     <!-- flet: end of feature {% endfor %} -->
 
     <application
+        android:usesCleartextTraffic="true"
         android:label="{{ cookiecutter.product_name }}"
         android:name="${applicationName}"
         android:enableOnBackInvokedCallback="true"
